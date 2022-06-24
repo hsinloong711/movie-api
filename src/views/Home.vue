@@ -18,13 +18,14 @@ export default {
     const search = ref("");
     const movies = ref([]);
 
-    const searchMovies = async () => {
+    const searchMovies = () => {
       if (search.value != "") {
-        let data = await fetch(
+        fetch(
           `https://api.themoviedb.org/3/movie/${search.value}?api_key=${env.apikey}`
-        );
+        )
+          .then((response) => response.json)
+          .then((data) => console.log(data));
       }
-      movies.value = data.json();
     };
 
     return { search, movies, searchMovies };
