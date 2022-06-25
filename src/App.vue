@@ -1,16 +1,22 @@
-<script setup>
+<script>
 import { RouterLink, RouterView } from "vue-router";
+import Navbar from "./components/Navbar.vue";
+
+export default {
+  components: { Navbar },
+};
 </script>
 
 <template>
-  <header>
-    <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
-    </nav>
-  </header>
-
-  <RouterView />
+  <div class="min-h-screen text-black pb-12">
+    <Navbar />
+    <router-view> </router-view>
+  </div>
 </template>
 
-<style></style>
+<style>
+* {
+  font-family: "Verdana", "Arial";
+  font-weight: 700;
+}
+</style>
