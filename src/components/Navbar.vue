@@ -3,7 +3,7 @@
   <div class="container mx-auto w-12/12 md:w-10/12 lg:w-7/12 md:pt-2">
     <!-- Desktop logo -->
     <div class="hidden md:flex text-3xl text-blue">
-      <h1 class="logo">MoviesUP</h1>
+      <h1 class="logo pb-1.5">MoviesUP</h1>
 
       <img
         class="h-9 w-8 pt-0.5 pb-1.5"
@@ -35,12 +35,16 @@
       </div>
     </div>
 
-    <!--Router  -->
-    <div class="container hidden md:flex items-start mx-auto w-12/12 bg-blue">
-      <router-link class="title text-white" :to="{ name: 'home' }"
+    <!--Desktop router  -->
+    <div class="container hidden md:flex w-12/12 bg-blue">
+      <router-link
+        class="title text-white px-4 py-2 br-4 br-white"
+        :to="{ name: 'home' }"
         >Home
       </router-link>
-      <router-link class="title text-white" :to="{ name: 'movie' }"
+      <router-link
+        class="title text-white px-4 py-2 br-4 br-white"
+        :to="{ name: 'movie' }"
         >Movie</router-link
       >
     </div>
@@ -58,9 +62,9 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Acme&family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 .title {
-  font-weight: 700;
+  font-size: 13px;
 }
 
 .logo {

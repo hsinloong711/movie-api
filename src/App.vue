@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-  <div class="min-h-screen text-black pb-12">
+  <div class="min-h-screen text-black">
     <Navbar />
     <router-view> </router-view>
   </div>
@@ -16,7 +16,7 @@ export default {
 
 <style>
 * {
-  font-family: "Verdana", "Arial";
+  font-family: Verdana, sans-serif;
   font-weight: 700;
 }
 </style>

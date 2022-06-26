@@ -17,8 +17,4 @@
 export default {};
 </script>
 
-<style>
-* {
-  font-family: "Helvetica";
-}
-</style>
+<style></style>
